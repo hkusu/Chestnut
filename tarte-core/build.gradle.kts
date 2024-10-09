@@ -1,5 +1,5 @@
-import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+// import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
+// import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -8,23 +8,29 @@ plugins {
 }
 
 kotlin {
-    jvm()
+    // jvm()
     androidTarget {
         publishLibraryVariants("release")
-        @OptIn(ExperimentalKotlinGradlePluginApi::class)
-        compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_1_8)
+        // @OptIn(ExperimentalKotlinGradlePluginApi::class)
+        // compilerOptions {
+        //     jvmTarget.set(JvmTarget.JVM_1_8)
+        // }
+        compilations.all {
+            kotlinOptions {
+                jvmTarget = "1.8"
+            }
         }
     }
     iosX64()
     iosArm64()
     iosSimulatorArm64()
-    linuxX64()
+    // linuxX64()
 
     sourceSets {
         val commonMain by getting {
             dependencies {
                 //put your multiplatform dependencies here
+                implementation(libs.coroutines.core)
             }
         }
         val commonTest by getting {
@@ -36,7 +42,7 @@ kotlin {
 }
 
 android {
-    namespace = "org.jetbrains.kotlinx.multiplatform.library.template"
+    namespace = "io.github.hkusu.tatre.core"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
