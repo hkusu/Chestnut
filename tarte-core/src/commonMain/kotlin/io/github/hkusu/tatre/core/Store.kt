@@ -11,8 +11,6 @@ interface Store<S : State, A : Action, E : Event> {
 
     val currentState: S
 
-    fun start()
-
     fun dispatch(action: A)
 
     fun collect(onState: OnState<S>, onEvent: OnEvent<E>): Job
