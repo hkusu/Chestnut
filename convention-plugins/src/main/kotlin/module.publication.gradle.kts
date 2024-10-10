@@ -18,7 +18,7 @@ publishing {
 
         // Provide artifacts information required by Maven Central
         pom {
-            name.set("Tarte")
+            name.set("Chestnut")
             description.set("Kotlin Multiplatform Flux framework")
             url.set("https://github.com/hkusu/Chestnut")
 
@@ -32,8 +32,8 @@ publishing {
                 developer {
                     id.set("hkusu")
                     name.set("Hiroyuki Kusu")
-                    // organization.set("YUMEMI Inc.")
-                    // organizationUrl.set("https://www.yumemi.co.jp")
+                    organization.set("hkusu")
+                    organizationUrl.set("https://hkusu.github.io")
                 }
             }
             scm {
