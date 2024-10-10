@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Chestnut"
 include(":chestnut-core")
+include(":chestnut-logging")
