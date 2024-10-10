@@ -1,4 +1,4 @@
-package io.github.hkusu.tatre.core
+package io.github.hkusu.chestnut.core
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -193,7 +193,7 @@ abstract class BaseStore<S : State, A : Action, E : Event>(
     }
 
     private fun printNote(throwable: Throwable) {
-        println("[Tarte] An error occurred during error handling. $throwable")
+        println("[Chestnut] An error occurred during error handling. $throwable")
     }
 
     protected fun interface EventEmit<E> {

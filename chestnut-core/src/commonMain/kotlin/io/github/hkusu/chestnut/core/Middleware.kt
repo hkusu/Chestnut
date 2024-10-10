@@ -1,4 +1,4 @@
-package io.github.hkusu.tatre.core
+package io.github.hkusu.chestnut.core
 
 interface Middleware<S : State, A : Action, E : Event> {
     suspend fun runBeforeActionDispatch(state: S, action: A) {}

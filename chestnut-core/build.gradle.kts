@@ -42,7 +42,7 @@ kotlin {
 }
 
 android {
-    namespace = "io.github.hkusu.tatre.core"
+    namespace = "io.github.hkusu.chestnut.core"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()

@@ -20,7 +20,7 @@ publishing {
         pom {
             name.set("Tarte")
             description.set("Kotlin Multiplatform Flux framework")
-            url.set("https://github.com/hkusu/Tarte")
+            url.set("https://github.com/hkusu/Chestnut")
 
             licenses {
                 license {
@@ -32,12 +32,12 @@ publishing {
                 developer {
                     id.set("hkusu")
                     name.set("Hiroyuki Kusu")
-                    organization.set("YUMEMI Inc.")
-                    organizationUrl.set("https://www.yumemi.co.jp")
+                    // organization.set("YUMEMI Inc.")
+                    // organizationUrl.set("https://www.yumemi.co.jp")
                 }
             }
             scm {
-                url.set("https://github.com/hkusu/Tarte")
+                url.set("https://github.com/hkusu/Chestnut")
             }
         }
     }

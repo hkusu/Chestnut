@@ -3,7 +3,7 @@ plugins {
 }
 
 allprojects {
-    group = "io.github.hkusu.tarte"
+    group = "io.github.hkusu.chestnut"
     version = "0.1.0"
 }
 

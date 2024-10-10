@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Tarte"
-include(":tarte-core")
+rootProject.name = "Chestnut"
+include(":chestnut-core")

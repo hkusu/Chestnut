@@ -1,4 +1,4 @@
-package io.github.hkusu.tatre.core
+package io.github.hkusu.chestnut.core
 
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.Flow
