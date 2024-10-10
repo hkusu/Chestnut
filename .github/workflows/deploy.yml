@@ -28,7 +28,7 @@ jobs:
           #   os: ubuntu-latest
           # - target: publishLinuxX64PublicationToSonatypeRepository
           #   os: ubuntu-latest
-          - target: publishKotlinMultiplatformPublicationToSonatypeRepository
+          - target: publishKotlinMultiplatformPublicationToSonatypeRepository --no-configuration-cache
             os: ubuntu-latest
     runs-on: ${{ matrix.os }}
     steps:
